@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"strings"
 	"sync"
+	"time"
 )
 
 type Terminal struct {
@@ -19,6 +20,8 @@ type Terminal struct {
 	stdout    io.Reader
 	stderr    io.Reader
 	handle    *exec.Cmd
+
+	_lastTimeAccess time.Time
 }
 
 func NewShell(cmd string, args ...string) (*exec.Cmd, io.Writer, io.Reader, io.Reader, error) {

@@ -1,11 +1,10 @@
 # go-terminal
 
+
+## log
+### v1.0
 基于go语言开发的termnial交互工具,支持bash,powershell.
-支持远程rpc调用terminal
+支持远程rpc调用terminal(功能性较弱)。
 
-## 如何添加go mod
-```bash
-# 初始化一个叫做go-terminal的项目
-go mod init go-terminal
 
-```
+### v2.0
